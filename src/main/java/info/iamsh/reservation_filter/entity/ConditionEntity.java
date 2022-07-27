@@ -3,8 +3,6 @@ package info.iamsh.reservation_filter.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 @Data
@@ -30,8 +28,5 @@ public class ConditionEntity {
 
     @Column(name = "room_type", columnDefinition = "integer default 3")
     private Integer roomType; // 1 gold, 2 platinum 3 silver  (default 3)// order by descending
-
-
-
-
+    
 }
